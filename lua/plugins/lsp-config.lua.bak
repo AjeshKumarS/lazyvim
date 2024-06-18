@@ -6,10 +6,13 @@ return {
                 "github:nvim-java/mason-registry",
                 "github:mason-org/mason-registry",
             },
+            ensure_installed = {
+                "stylua",
+                "shellcheck",
+                "shfmt",
+                "flake8",
+            },
         },
-        config = function(_, opts)
-            require("mason").setup(opts)
-        end,
     },
     {
         "williamboman/mason-lspconfig.nvim",
@@ -21,9 +24,6 @@ return {
             },
             ensure_installed = { "lua_ls", "golangci_lint_ls", "gopls" },
         },
-        config = function(_, opts)
-            require("mason-lspconfig").setup(opts)
-        end,
     },
     {
         "neovim/nvim-lspconfig",
@@ -48,10 +48,6 @@ return {
             lspconfig.ansiblels.setup({
                 capabilities = capabilities,
             })
-            lspconfig.jdtls.setup({
-                capabilities = capabilities,
-            })
-
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
             vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
             vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
@@ -80,18 +76,5 @@ return {
                 "yaml",
             })
         end,
-    },
-
-    -- add any tools you want to have installed below
-    {
-        "williamboman/mason.nvim",
-        opts = {
-            ensure_installed = {
-                "stylua",
-                "shellcheck",
-                "shfmt",
-                "flake8",
-            },
-        },
     },
 }
