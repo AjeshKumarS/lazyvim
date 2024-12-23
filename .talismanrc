@@ -1,0 +1,8 @@
+fileignoreconfig:
+- filename: lazy-lock.json
+  checksum: 514ef68cab9f611eb239ba142b39bbf2d51c2a531b569e78c00b3e7f6e7efa5d
+- filename: lua/config/keymaps.lua
+  checksum: 2a776b79df783f03f2120bc9f5cdabf350a7994bfeaa6720db93ebdd566cf41c
+- filename: lua/plugins/nvim-cmp.lua
+  checksum: 0e097c70f8c61932bc80c0d2fa467db1ca2c6509fe824713ec7691c69e7c6256
+version: ""

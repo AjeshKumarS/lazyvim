@@ -16,5 +16,6 @@ vim.opt.colorcolumn = "120"
 vim.opt.wrap = true
 vim.opt.linebreak = true
 vim.opt.breakindent = true
+vim.opt.relativenumber = false
 
 -- }}}
