@@ -7,4 +7,6 @@ fileignoreconfig:
   checksum: f2e6dbf309048c14fd852d4890502d89349c1b15ac716385aa10616cca75f182
 - filename: lua/code/keymaps.lua
   checksum: c832c857d884127ce7e37f86747049cf622ff5a7ac2731353b91123b4ad7fa09
+- filename: others/.zshrc
+  checksum: bfc7b3aed616e4c5b98da025e2f2cca875a6d45d634ef6418c7459c36e9c0ec8
 checksum:version: ""
